@@ -1,6 +1,7 @@
 
 import { getRankingService, inProgressService } from "../../service/getRanking.service";
 import { RequestHandler } from "express";
+import { changeProgressService } from "../../service/changeProgress.service";
 
 export const validationCompetition: RequestHandler = async (req, res, next) => {
   const { nameCompetition } = req.body;
@@ -12,9 +13,9 @@ export const validationCompetition: RequestHandler = async (req, res, next) => {
 }
 
 export const validationNameCompetition: RequestHandler = async (req, res, next) => {
-  const { nameCompetition } = req.body;
-  const progress = await getRankingService(nameCompetition)
-  if (progress == null) {
+  const { nameCompetition, changeProgress } = req.body;
+  const progress = await changeProgressService(nameCompetition, changeProgress)
+  if (!progress) {
     return res.status(404).json({ message: "Competição não existente" })
   }
   return next()

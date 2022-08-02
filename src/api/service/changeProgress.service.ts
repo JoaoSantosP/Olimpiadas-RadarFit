@@ -3,5 +3,8 @@ import { changeProgressModel } from "../model/changeProgressModel.model";
 
 export const changeProgressService = async (nameCompetition: string, changeProgress: boolean) => {
   const finalResult = await changeProgressModel(nameCompetition, changeProgress)
+  if (!finalResult) {
+    return null
+  }
   return finalResult
 }
