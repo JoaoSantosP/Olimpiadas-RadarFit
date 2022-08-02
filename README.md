@@ -8,4 +8,11 @@ Competição de yoga: maior tempo fazendo yoga vence
 
 Competição de perda de peso: maior quantidade de calorias perdidas vence
 
- Competição de dardos: maior distância entre os lançamentos vence
+Competição de dardos: maior distância entre os lançamentos vence
+
+##Como rodar o projeto
+
+- clonar este repositorio `git clone git@github.com:JoaoSantosP/Olimpiadas-RadarFit.git`
+- rodar o comando `npm install`
+- rodar o comando `npx prisma studio` e popular o banco de dados através dele
+- rodar o comando `npm run dev` para rodar a api
