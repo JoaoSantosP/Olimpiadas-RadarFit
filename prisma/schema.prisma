@@ -1,0 +1,25 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model campeonato {
+  id         Int    @id @default(autoincrement())
+  competicao String
+  atleta     String
+  value      Int
+  unidade    String
+}
+
+model competicao {
+  id                 Int     @id @default(autoincrement())
+  nome_da_competicao String  @unique
+  em_progresso       Boolean @default(true)
+}
