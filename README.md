@@ -10,7 +10,7 @@ Competição de perda de peso: maior quantidade de calorias perdidas vence
 
 Competição de dardos: maior distância entre os lançamentos vence
 
-##Como rodar o projeto
+## Como rodar o projeto
 
 - clonar este repositorio `git clone git@github.com:JoaoSantosP/Olimpiadas-RadarFit.git`
 - rodar o comando `npm install`
