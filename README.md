@@ -12,7 +12,7 @@ Competição de dardos: maior distância entre os lançamentos vence
 
 ## Como rodar o projeto
 
-- clonar este repositorio `git clone git@github.com:JoaoSantosP/Olimpiadas-RadarFit.git`
-- rodar o comando `npm install`
-- rodar o comando `npx prisma studio` e popular o banco de dados através dele
-- rodar o comando `npm run dev` para rodar a api
+- Clonar este repositorio `git clone git@github.com:JoaoSantosP/Olimpiadas-RadarFit.git`
+- Rodar o comando `npm install`
+- Rodar o comando `npx prisma studio` e popular o banco de dados através dele
+- Rodar o comando `npm run dev` para rodar a api
